@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cape Store | Producto</title>
+    <!-- Metadatos para SEO -->
+    <meta name="description" content="Descubre la comodidad y el estilo con nuestra Camiseta de Algodón Premium. Confeccionada con 100% algodón de alta calidad. Ideal para cualquier ocasión.">
+    <meta name="keywords" content="Cape Store, camiseta de algodón, ropa, moda, producto, algodón, suave, transpirable">
+    <meta name="author" content="Cape Store">
+    <!-- Estilos CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      /* Estilos adicionales */
+      .max-w-6xl {
+        max-width: 72rem; /* Ancho máximo */
+      }
+      .banner-text {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+      }
+      .banner-image {
+        background-image: url('img/producto.jpg'); /* URL de tu imagen */
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+   <!-- Barra de navegación -->
+   <nav class="bg-primary1 text-black p-4">
+    <div class="container mx-auto flex items-center justify-around">
+      <!-- Logo -->
+      <a href="../index.html" class="text-xl font-bold">
+        <img src="img/logo.svg" alt="Tu Logo" class="h-16"> <!-- Logo más grande -->
+      </a>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="h-12 w-12">
+        <circle cx="50" cy="50" r="40" class="fill-current text-blue-500" />
+        <path d="M50 10 L70 80 L30 80 Z" class="fill-current text-red-500" />
+      </svg>
+      
+      <!-- Menú -->
+      <ul class="hidden sm:flex space-x-4">
+        <li><a href="../index.html" class="hover:text-gray-400">Inicio</a></li>
+        <li><a href="categoria.html" class="hover:text-gray-400">Categoría</a></li>
+        <li><a href="producto.html" class="hover:text-gray-400">Productos</a></li>
+        <li><a href="producto.html" class="hidden sm:inline-block ml-4 px-4 py-2 border bg-blue-500 rounded-md hover:bg-gray-500 text-white">Compra Ahora-></a></li>
+      </ul>
+      <!-- Menú para dispositivos móviles (oculto por defecto) -->
+      <button class="sm:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Banner del producto -->
+  <div class="banner-image bg-gray-900 text-white py-40 px-40 text-center banner-text">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold mb-4">Detalles del Producto</h1>
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="container mx-auto my-8 max-w-6xl px-4"> <!-- Contenedor centrado y ancho máximo -->
+    <div class="flex flex-wrap">
+      <!-- Imagen del producto -->
+      <div class="w-full lg:w-1/2">
+        <img src="img/camiseta.jpg" alt="Camiseta de Algodón" class="w-full rounded-lg shadow-md">
+      </div>
+      <!-- Detalles del producto -->
+      <div class="w-full lg:w-1/2 lg:pl-8">
+        <h2 class="text-3xl font-bold mb-4">Camiseta de Algodón</h2>
+        <p class="text-xl text-gray-800 mb-4">$20.00 inc IVA</p>
+        <p class="text-gray-600 mb-4">Descubre la comodidad y el estilo con nuestra Camiseta de Algodón Premium. Esta prenda esencial está confeccionada con 100% algodón de alta calidad, lo que garantiza una suavidad incomparable y una durabilidad excepcional. Ideal para cualquier ocasión, desde un día casual hasta una salida informal.</p>
+        <ul class="list-disc pl-5 mb-4">
+          <li>Material: 100% algodón de alta calidad, suave y transpirable.</li>
+          <li>Diseño: Corte clásico que se adapta perfectamente.</li>
+          <li>Tallas: Ofrecemos una amplia gama de tallas, desde XS hasta XXL.</li>
+        </ul>
+        <button class="bg-primary2 text-black px-6 py-3 rounded-md hover:bg-primary3">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de productos relacionados -->
+  <div class="container mx-auto my-8 max-w-6xl px-4">
+    <h2 class="text-3xl font-bold mb-4">Productos Relacionados</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Producto relacionado 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/jean.jpg" alt="Jeans" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Jeans</h2>
+          <p class="text-gray-600">$25.00 inc IVA</p>
+          <a href="producto.html" class="mt-4 inline-block bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver más</a>
+        </div>
+      </div>
+
+      <!-- Producto relacionado 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/zapatos.jpg" alt="Zapatos" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Zapatos</h2>
+          <p class="text-gray-600">$25.00 inc IVA</p>
+          <a href="producto.html" class="mt-4 inline-block bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver más</a>
+        </div>
+      </div>
+
+      <!-- Producto relacionado 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/accesorios.jpg" alt="Accesorios" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Accesorios</h2>
+          <p class="text-gray-600">$20.00 inc IVA</p>
+          <a href="producto.html" class="mt-4 inline-block bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">&copy; 2024 Cape Store. Todos los derechos reservados.</p>
+      <p class="text-sm">Desarrollado por <a href="https://www.linkedin.com/in/crianbra/" class="underline hover:text-gray-400">Andrés Bravo</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

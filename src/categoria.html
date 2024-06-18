@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cape Store | Categorías</title>
+    <!-- Metadatos para SEO -->
+    <meta name="description" content="Explora nuestras categorías de productos en Cape Store: camisetas, jeans, zapatos, ropa deportiva, accesorios y ofertas. Encuentra lo que necesitas en nuestra amplia selección de categorías.">
+    <meta name="keywords" content="Cape Store, categorías, ropa, moda, camisetas, jeans, zapatos, ropa deportiva, accesorios, ofertas">
+    <meta name="author" content="Cape Store">
+    <!-- Estilos CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      /* Estilos adicionales */
+      .max-w-6xl {
+        max-width: 72rem; /* Ancho máximo */
+      }
+      .banner-text {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+      }
+      .banner-image {
+        background-image: url('img/categoria.jpg'); /* URL de tu imagen */
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Barra de navegación -->
+    <nav class="bg-primary1 text-black p-4">
+        <div class="container mx-auto flex items-center justify-around">
+          <!-- Logo -->
+          <a href="../index.html" class="text-xl font-bold">
+            <img src="img/logo.svg" alt="Tu Logo" class="h-16"> <!-- Logo más grande -->
+          </a>
+          <!-- Menú -->
+          <ul class="hidden sm:flex space-x-4">
+            <li><a href="../index.html" class="hover:text-gray-400">Inicio</a></li>
+            <li><a href="categoria.html" class="hover:text-gray-400">Categoría</a></li>
+            <li><a href="producto.html" class="hover:text-gray-400">Productos</a></li>
+            <a href="producto.html" class="hidden sm:inline-block ml-4 px-4 py-2 border bg-blue-500 rounded-md hover:bg-gray-500 text-white">Compra Ahora-></a>
+          </ul>
+          <!-- Menú para dispositivos móviles (oculto por defecto) -->
+          <button class="sm:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+    </nav>
+
+  <!-- Banner de categorías -->
+  <div class="banner-image bg-gray-900 text-white py-40 px-40 text-center banner-text">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold mb-4">Explora nuestras categorías</h1>
+      <p class="text-lg">Encuentra lo que necesitas en nuestra amplia selección de categorías.</p>
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="container mx-auto my-8 max-w-6xl px-4"> <!-- Contenedor centrado y ancho máximo -->
+    <h2 class="text-3xl font-bold mb-4">Categorías</h2>
+
+    <!-- Grid de categorías -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Categoría 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/Camiseta.jpg" alt="Camisetas" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Camisetas</h2>
+          <p class="text-gray-600">Descubre nuestra colección en camisetas.</p>
+          <a href="producto.html" class="mt-4 inline-block bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver más</a>
+        </div>
+      </div>
+
+      <!-- Categoría 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/jean.jpg" alt="Jeans" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Jeans</h2>
+          <p class="text-gray-600">Explora nuestra colección en jeans.</p>
+          <a href="producto.html" class="mt-4 inline-block bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver más</a>
+        </div>
+      </div>
+
+      <!-- Categoría 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/zapatos.jpg" alt="Zapatos" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Zapatos</h2>
+          <p class="text-gray-600">Encuentra nuestra colección en zapatos.</p>
+          <a href="producto.html" class="mt-4 inline-block bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver más</a>
+        </div>
+      </div>
+
+      <!-- Categoría 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/deportiva.jpg" alt="Ropa Deportiva" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Ropa Deportiva</h2>
+          <p class="text-gray-600">Encuentra ropa deportiva para tus entrenamientos.</p>
+          <a href="producto.html" class="mt-4 inline-block bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver más</a>
+        </div>
+      </div>
+
+      <!-- Categoría 5 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/accesorios.jpg" alt="Accesorios" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Accesorios</h2>
+          <p class="text-gray-600">Explora nuestra colección en accesorios.</p>
+          <a href="producto.html" class="mt-4 inline-block bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver más</a>
+        </div>
+      </div>
+
+      <!-- Categoría 6 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="img/niños.jpg" alt="Ofertas" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Ofertas</h2>
+          <p class="text-gray-600">Encuentra nuestra ofertas en ropa de niños.</p>
+          <a href="producto.html" class="mt-4 inline-block bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver más</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">&copy; 2024 Cape Store. Todos los derechos reservados.</p>
+      <p class="text-sm">Desarrollado por <a href="https://www.linkedin.com/in/crianbra/" class="underline hover:text-gray-400">Andrés Bravo</a></p>
+    </div>
+  </footer>
+  
+  
+  
+  </body>
+  </html>
+  

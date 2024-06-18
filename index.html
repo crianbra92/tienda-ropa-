@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadatos para SEO -->
+    <meta name="description" content="Cape Store - Tienda de ropa con la mejor colección de moda para el Rey del hogar. Ofertas, descuentos y envíos a domicilio gratis.">
+    <meta name="keywords" content="tienda de ropa, moda, camisetas, pantalones, zapatos, ropa deportiva, accesorios, ofertas, descuentos">
+    <meta name="author" content="Cape Store">
+    <title>Cape Store | Tienda de Ropa</title>
+    <!-- Estilos CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Estilos Adicionales -->
+    <style>
+      .max-w-6xl {
+        max-width: 72rem;
+      }
+      .banner-image {
+        background-image: url('src/img/banner-2.jpg');
+        background-size: cover;
+        background-position: top;
+      }
+      .banner-text {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      }
+      .product {
+        transition: transform 0.3s ease;
+      }
+      .product:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <div class="bg-red-500 text-white text-center py-2">
+    Descuentos y Ofertas en ropa para el Rey del hogar
+  </div>
+
+  <!-- Barra de navegación -->
+   <nav class="bg-primary1 text-black p-4">
+    <div class="container mx-auto flex items-center justify-around">
+      <a href="index.html" class="text-xl font-bold">
+        <!-- Logo -->
+        <img src="src/img/logo.svg" alt="Logo de Cape Store" class="h-16">
+      </a>
+      <!-- Menú -->
+      <ul class="hidden sm:flex space-x-4">
+        <li><a href="index.html" class="hover:text-gray-400">Inicio</a></li>
+        <li><a href="src/categoria.html" class="hover:text-gray-400">Categoría</a></li>
+        <li><a href="src/producto.html" class="hover:text-gray-400">Productos</a></li>
+        <a href="src/producto.html" class="hidden sm:inline-block ml-4 px-4 py-2 border bg-blue-500 rounded-md hover:bg-gray-500 text-white">Compra Ahora-></a>
+      </ul>
+      <!-- Menú para dispositivos móviles (oculto por defecto) -->
+      <button class="sm:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+   <!-- Banner Principal -->
+  <div class="banner-image bg-gray-900 text-white py-40 px-40 text-left relative">
+    <div class="container mx-auto">
+      <h1 class="text-6xl font-bold mb-4 banner-text">NUESTRA TIENDA DE ROPA</h1>
+      <p class="text-lg banner-text">Descubre nuestra colección de ropa de moda al mejor precio.</p>
+      <button class="bg-secondary1 hover:bg-primary3 text-white font-bold py-2 px-4 rounded mt-8">Ver Ofertas -></button>
+    </div>
+  </div>
+
+   <!-- Categorías -->
+  <section class="bg-gray-200 py-10">
+    <div class="container mx-auto flex items-center justify-center space-x-12">
+      <div class="text-center">
+        <a href="src/categoria.html" class="block text-gray-600 hover:text-gray-900">
+          <i class="fas fa-tshirt text-5xl mb-2"></i>
+          <span>Camisetas</span>
+        </a>
+      </div>
+      <div class="text-center">
+        <a href="src/categoria.html" class="block text-gray-600 hover:text-gray-900">
+          <i class="fas fa-male text-5xl mb-2"></i>
+          <span>Pantalones</span>
+        </a>
+      </div>
+      <div class="text-center">
+        <a href="src/categoria.html" class="block text-gray-600 hover:text-gray-900">
+          <i class="fas fa-shoe-prints text-5xl mb-2"></i>
+          <span>Zapatos</span>
+        </a>
+      </div>
+      <div class="text-center">
+        <a href="src/categoria.html" class="block text-gray-600 hover:text-gray-900">
+          <i class="fas fa-running text-5xl mb-2"></i>
+          <span>Ropa Deportiva</span>
+        </a>
+      </div>
+      <div class="text-center">
+        <a href="src/categoria.html" class="block text-gray-600 hover:text-gray-900">
+          <i class="fas fa-hat-cowboy-side text-5xl mb-2"></i>
+          <span>Accesorios</span>
+        </a>
+      </div>
+      <div class="text-center">
+        <a href="src/categoria.html" class="block text-gray-600 hover:text-gray-900">
+          <i class="fas fa-tags text-5xl mb-2"></i>
+          <span>Ofertas</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+   <!-- Ofertas -->
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-4 text-center">Ofertas</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden product">
+          <img src="src/img/camiseta.jpg" alt="Camiseta en oferta" class="w-full">
+          <div class="p-4">
+            <h2 class="text-lg font-semibold">Camiseta</h2>
+            <p class="text-gray-600">$10</p>
+            <a href="src/producto.html" class="block mt-4 bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver detalles</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden product">
+          <img src="src/img/jean.jpg" alt="Pantalon en oferta" class="w-full">
+          <div class="p-4">
+            <h2 class="text-lg font-semibold">Pantalon</h2>
+            <p class="text-gray-600">$15</p>
+            <a href="src/producto.html" class="block mt-4 bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver detalles</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden product">
+          <img src="src/img/zapatos.jpg" alt="Zapatos en oferta" class="w-full">
+          <div class="p-4">
+            <h2 class="text-lg font-semibold">Zapatos</h2>
+            <p class="text-gray-600">$20</p>
+            <a href="src/producto.html" class="block mt-4 bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver detalles</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden product">
+          <img src="src/img/deportiva.jpg" alt="Ropa deportiva en oferta" class="w-full">
+          <div class="p-4">
+            <h2 class="text-lg font-semibold">Ropa Deportiva</h2>
+            <p class="text-gray-600">$25</p>
+            <a href="src/producto.html" class="block mt-4 bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver detalles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Envio -->
+  <div class="bg-blue-400 text-white text-center py-4">
+    <p class="text-lg font-bold">¡Envíos a domicilio gratis!</p>
+  </div>
+
+   <!-- Productos -->
+  <div class="container mx-auto my-8 max-w-6xl px-4">
+    <h2 class="text-3xl font-bold mb-4 text-center">Nuestros Productos</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden product">
+        <img src="src/img/camiseta.jpg" alt="Chaqueta a la venta" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Chaqueta</h2>
+          <p class="text-gray-600">$30</p>
+          <a href="src/producto.html" class="block mt-4 bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver detalles</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden product">
+        <img src="src/img/jean.jpg" alt="Vestido a la venta" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Vestido</h2>
+          <p class="text-gray-600">$35</p>
+          <a href="src/producto.html" class="block mt-4 bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver detalles</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden product">
+        <img src="src/img/zapatos.jpg" alt="Gorra a la venta" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Gorra</h2>
+          <p class="text-gray-600">$5</p>
+          <a href="src/producto.html" class="block mt-4 bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver detalles</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden product">
+        <img src="src/img/deportiva.jpg" alt="Morral a la venta" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Morral</h2>
+          <p class="text-gray-600">$40</p>
+          <a href="src/producto.html" class="block mt-4 bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver detalles</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden product">
+        <img src="src/img/accesorios.jpg" alt="Chaqueta a la venta" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Chaqueta</h2>
+          <p class="text-gray-600">$30</p>
+          <a href="src/producto.html" class="block mt-4 bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver detalles</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden product">
+        <img src="src/img/niños.jpg" alt="Vestido a la venta" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Vestido</h2>
+          <p class="text-gray-600">$35</p>
+          <a href="src/producto.html" class="block mt-4 bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver detalles</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden product">
+        <img src="src/img/zapatos.jpg" alt="Gorra a la venta" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Gorra</h2>
+          <p class="text-gray-600">$5</p>
+          <a href="src/producto.html" class="block mt-4 bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver detalles</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden product">
+        <img src="src/img/camiseta.jpg" alt="Morral a la venta" class="w-full">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold">Morral</h2>
+          <p class="text-gray-600">$40</p>
+          <a href="src/producto.html" class="block mt-4 bg-primary2 text-black px-4 py-2 rounded-md hover:bg-primary3">Ver detalles</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Newsletter -->
+  <section class="bg-blue-400 py-10">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">Suscríbete a nuestro Newsletter</h2>
+      <p class="text-white mb-6">Recibe las últimas noticias y ofertas directamente en tu bandeja de entrada.</p>
+      <form class="max-w-md mx-auto">
+        <div class="flex flex-col sm:flex-row">
+          <input type="email" placeholder="Ingresa tu correo electrónico" class="w-full p-3 rounded-md mb-4 sm:mb-0 sm:mr-2">
+          <button class="bg-secondary1 text-white font-bold p-3 rounded-md hover:bg-primary3">Suscribirse</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+   <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">&copy; 2024 Cape Store. Todos los derechos reservados.</p>
+      <p class="text-sm">Desarrollado por <a href="https://www.linkedin.com/in/crianbra/" class="underline hover:text-gray-400">Andrés Bravo</a></p>
+    </div>
+  </footer>
+  
+</body>
+</html>
